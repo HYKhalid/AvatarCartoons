@@ -8,8 +8,8 @@
 
 //  DEVELOPER NOTES:-
 //  ****************************************************************************************/
-//  Simple View controller class with a collection View and Container View
-//  The view employs the use async image fetch from URLs and an Image Cache
+//  Simple View controller class with a collection View and a Container View
+//  The ImageViews fetch images asynchronously URLs and an Image Cache
 //  To avoid making repeated requests for the same images.
 //  ****************************************************************************************/
 
