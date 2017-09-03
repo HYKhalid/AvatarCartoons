@@ -34,22 +34,6 @@ class AvatarViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let bridge = dataBridge {
-            for val in bridge.getAvatarIDList() {
-                print("AVATAR ID: \(val)")
-                for assetID in bridge.getAssetList(forAvatarID: val as! Int) {
-                    print("Asset: \(assetID)")
-                }
-            }
-            
-            for viewModel in bridge.avatarViewModelList {
-                if let vm = viewModel as? AvatarViewModel {
-                    print("VIEW: \(vm.avatarID)")
-                }
-            }
-            
-            
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
