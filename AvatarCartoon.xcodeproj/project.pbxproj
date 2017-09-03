@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		769843651F5B1842005A5B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769843641F5B1842005A5B79 /* AppDelegate.swift */; };
+		769843671F5B1842005A5B79 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769843661F5B1842005A5B79 /* AvatarViewController.swift */; };
+		7698436A1F5B1842005A5B79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769843681F5B1842005A5B79 /* Main.storyboard */; };
+		7698436C1F5B1842005A5B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7698436B1F5B1842005A5B79 /* Assets.xcassets */; };
+		7698436F1F5B1842005A5B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7698436D1F5B1842005A5B79 /* LaunchScreen.storyboard */; };
+		769843861F5B1880005A5B79 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769843851F5B1880005A5B79 /* libcurl.a */; };
+		769843931F5B1957005A5B79 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769843921F5B1957005A5B79 /* jsoncpp.cpp */; };
+		769843991F5B1AA6005A5B79 /* AvatarModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769843971F5B1AA6005A5B79 /* AvatarModel.cpp */; };
+		7698439C1F5B1AD7005A5B79 /* AssetModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7698439A1F5B1AD7005A5B79 /* AssetModel.cpp */; };
+		7698439F1F5B1AED005A5B79 /* NetworkManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7698439D1F5B1AED005A5B79 /* NetworkManager.cpp */; };
+		769843A21F5B1B02005A5B79 /* DataAccessManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769843A01F5B1B02005A5B79 /* DataAccessManager.cpp */; };
+		769843A51F5B1C8C005A5B79 /* DataAccessBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 769843A41F5B1C8C005A5B79 /* DataAccessBridge.mm */; };
+		769843A81F5B1CC6005A5B79 /* AvatarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 769843A71F5B1CC6005A5B79 /* AvatarViewModel.m */; };
+		769843AD1F5B2106005A5B79 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769843AC1F5B2106005A5B79 /* Extensions.swift */; };
+		769843AF1F5B34AC005A5B79 /* AvatarIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769843AE1F5B34AC005A5B79 /* AvatarIconCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		769843611F5B1842005A5B79 /* AvatarCartoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarCartoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		769843641F5B1842005A5B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		769843661F5B1842005A5B79 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		769843691F5B1842005A5B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7698436B1F5B1842005A5B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7698436E1F5B1842005A5B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		769843701F5B1842005A5B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7698437A1F5B1880005A5B79 /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		7698437B1F5B1880005A5B79 /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		7698437C1F5B1880005A5B79 /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		7698437D1F5B1880005A5B79 /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		7698437E1F5B1880005A5B79 /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		7698437F1F5B1880005A5B79 /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		769843801F5B1880005A5B79 /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		769843811F5B1880005A5B79 /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		769843821F5B1880005A5B79 /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		769843831F5B1880005A5B79 /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		769843851F5B1880005A5B79 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		769843901F5B1957005A5B79 /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		769843911F5B1957005A5B79 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		769843921F5B1957005A5B79 /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		769843971F5B1AA6005A5B79 /* AvatarModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AvatarModel.cpp; sourceTree = "<group>"; };
+		769843981F5B1AA6005A5B79 /* AvatarModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AvatarModel.hpp; sourceTree = "<group>"; };
+		7698439A1F5B1AD7005A5B79 /* AssetModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetModel.cpp; sourceTree = "<group>"; };
+		7698439B1F5B1AD7005A5B79 /* AssetModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AssetModel.hpp; sourceTree = "<group>"; };
+		7698439D1F5B1AED005A5B79 /* NetworkManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkManager.cpp; sourceTree = "<group>"; };
+		7698439E1F5B1AED005A5B79 /* NetworkManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NetworkManager.hpp; sourceTree = "<group>"; };
+		769843A01F5B1B02005A5B79 /* DataAccessManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataAccessManager.cpp; sourceTree = "<group>"; };
+		769843A11F5B1B02005A5B79 /* DataAccessManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataAccessManager.hpp; sourceTree = "<group>"; };
+		769843A31F5B1BC6005A5B79 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		769843A41F5B1C8C005A5B79 /* DataAccessBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataAccessBridge.mm; sourceTree = "<group>"; };
+		769843A61F5B1CA4005A5B79 /* DataAccessBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataAccessBridge.h; sourceTree = "<group>"; };
+		769843A71F5B1CC6005A5B79 /* AvatarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewModel.m; sourceTree = "<group>"; };
+		769843A91F5B1CD6005A5B79 /* AvatarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvatarViewModel.h; sourceTree = "<group>"; };
+		769843AA1F5B1D1A005A5B79 /* AvatarCartoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvatarCartoon-Bridging-Header.h"; sourceTree = "<group>"; };
+		769843AC1F5B2106005A5B79 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		769843AE1F5B34AC005A5B79 /* AvatarIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarIconCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7698435E1F5B1842005A5B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769843861F5B1880005A5B79 /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		769843581F5B1842005A5B79 = {
+			isa = PBXGroup;
+			children = (
+				769843761F5B1849005A5B79 /* Libraries */,
+				769843631F5B1842005A5B79 /* AvatarCartoon */,
+				769843621F5B1842005A5B79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		769843621F5B1842005A5B79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				769843611F5B1842005A5B79 /* AvatarCartoon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		769843631F5B1842005A5B79 /* AvatarCartoon */ = {
+			isa = PBXGroup;
+			children = (
+				769843AB1F5B20C6005A5B79 /* Utilities */,
+				769843961F5B1A56005A5B79 /* DAL */,
+				769843951F5B1A4E005A5B79 /* Bridge */,
+				769843941F5B1A1C005A5B79 /* View */,
+				769843641F5B1842005A5B79 /* AppDelegate.swift */,
+				7698436D1F5B1842005A5B79 /* LaunchScreen.storyboard */,
+				769843701F5B1842005A5B79 /* Info.plist */,
+			);
+			path = AvatarCartoon;
+			sourceTree = "<group>";
+		};
+		769843761F5B1849005A5B79 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7698438E1F5B1957005A5B79 /* JsonCpp */,
+				769843771F5B1880005A5B79 /* libcurl-ios-dist */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		769843771F5B1880005A5B79 /* libcurl-ios-dist */ = {
+			isa = PBXGroup;
+			children = (
+				769843781F5B1880005A5B79 /* include */,
+				769843841F5B1880005A5B79 /* lib */,
+			);
+			path = "libcurl-ios-dist";
+			sourceTree = "<group>";
+		};
+		769843781F5B1880005A5B79 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				769843791F5B1880005A5B79 /* curl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		769843791F5B1880005A5B79 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				7698437A1F5B1880005A5B79 /* curl.h */,
+				7698437B1F5B1880005A5B79 /* curlbuild.h */,
+				7698437C1F5B1880005A5B79 /* curlrules.h */,
+				7698437D1F5B1880005A5B79 /* curlver.h */,
+				7698437E1F5B1880005A5B79 /* easy.h */,
+				7698437F1F5B1880005A5B79 /* mprintf.h */,
+				769843801F5B1880005A5B79 /* multi.h */,
+				769843811F5B1880005A5B79 /* stdcheaders.h */,
+				769843821F5B1880005A5B79 /* system.h */,
+				769843831F5B1880005A5B79 /* typecheck-gcc.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		769843841F5B1880005A5B79 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				769843851F5B1880005A5B79 /* libcurl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7698438E1F5B1957005A5B79 /* JsonCpp */ = {
+			isa = PBXGroup;
+			children = (
+				7698438F1F5B1957005A5B79 /* json */,
+				769843921F5B1957005A5B79 /* jsoncpp.cpp */,
+			);
+			path = JsonCpp;
+			sourceTree = "<group>";
+		};
+		7698438F1F5B1957005A5B79 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				769843901F5B1957005A5B79 /* json-forwards.h */,
+				769843911F5B1957005A5B79 /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		769843941F5B1A1C005A5B79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				769843661F5B1842005A5B79 /* AvatarViewController.swift */,
+				769843681F5B1842005A5B79 /* Main.storyboard */,
+				7698436B1F5B1842005A5B79 /* Assets.xcassets */,
+				769843AE1F5B34AC005A5B79 /* AvatarIconCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		769843951F5B1A4E005A5B79 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				769843A41F5B1C8C005A5B79 /* DataAccessBridge.mm */,
+				769843A61F5B1CA4005A5B79 /* DataAccessBridge.h */,
+				769843A71F5B1CC6005A5B79 /* AvatarViewModel.m */,
+				769843A91F5B1CD6005A5B79 /* AvatarViewModel.h */,
+				769843AA1F5B1D1A005A5B79 /* AvatarCartoon-Bridging-Header.h */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
+		769843961F5B1A56005A5B79 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				769843971F5B1AA6005A5B79 /* AvatarModel.cpp */,
+				769843981F5B1AA6005A5B79 /* AvatarModel.hpp */,
+				7698439A1F5B1AD7005A5B79 /* AssetModel.cpp */,
+				7698439B1F5B1AD7005A5B79 /* AssetModel.hpp */,
+				7698439D1F5B1AED005A5B79 /* NetworkManager.cpp */,
+				7698439E1F5B1AED005A5B79 /* NetworkManager.hpp */,
+				769843A01F5B1B02005A5B79 /* DataAccessManager.cpp */,
+				769843A11F5B1B02005A5B79 /* DataAccessManager.hpp */,
+				769843A31F5B1BC6005A5B79 /* Constants.h */,
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
+		769843AB1F5B20C6005A5B79 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				769843AC1F5B2106005A5B79 /* Extensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		769843601F5B1842005A5B79 /* AvatarCartoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 769843731F5B1842005A5B79 /* Build configuration list for PBXNativeTarget "AvatarCartoon" */;
+			buildPhases = (
+				7698435D1F5B1842005A5B79 /* Sources */,
+				7698435E1F5B1842005A5B79 /* Frameworks */,
+				7698435F1F5B1842005A5B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvatarCartoon;
+			productName = AvatarCartoon;
+			productReference = 769843611F5B1842005A5B79 /* AvatarCartoon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		769843591F5B1842005A5B79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hassan Yar Khalid ";
+				TargetAttributes = {
+					769843601F5B1842005A5B79 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7698435C1F5B1842005A5B79 /* Build configuration list for PBXProject "AvatarCartoon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 769843581F5B1842005A5B79;
+			productRefGroup = 769843621F5B1842005A5B79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				769843601F5B1842005A5B79 /* AvatarCartoon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7698435F1F5B1842005A5B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7698436F1F5B1842005A5B79 /* LaunchScreen.storyboard in Resources */,
+				7698436C1F5B1842005A5B79 /* Assets.xcassets in Resources */,
+				7698436A1F5B1842005A5B79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7698435D1F5B1842005A5B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769843A81F5B1CC6005A5B79 /* AvatarViewModel.m in Sources */,
+				769843A21F5B1B02005A5B79 /* DataAccessManager.cpp in Sources */,
+				769843991F5B1AA6005A5B79 /* AvatarModel.cpp in Sources */,
+				769843931F5B1957005A5B79 /* jsoncpp.cpp in Sources */,
+				7698439C1F5B1AD7005A5B79 /* AssetModel.cpp in Sources */,
+				769843AD1F5B2106005A5B79 /* Extensions.swift in Sources */,
+				769843AF1F5B34AC005A5B79 /* AvatarIconCell.swift in Sources */,
+				769843671F5B1842005A5B79 /* AvatarViewController.swift in Sources */,
+				7698439F1F5B1AED005A5B79 /* NetworkManager.cpp in Sources */,
+				769843A51F5B1C8C005A5B79 /* DataAccessBridge.mm in Sources */,
+				769843651F5B1842005A5B79 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		769843681F5B1842005A5B79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				769843691F5B1842005A5B79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7698436D1F5B1842005A5B79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7698436E1F5B1842005A5B79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		769843711F5B1842005A5B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		769843721F5B1842005A5B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		769843741F5B1842005A5B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/JsonCpp",
+					"$(PROJECT_DIR)/libcurl-ios-dist/include",
+				);
+				INFOPLIST_FILE = AvatarCartoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libcurl-ios-dist/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyk.AvatarCartoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AvatarCartoon/AvatarCartoon-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		769843751F5B1842005A5B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/JsonCpp",
+					"$(PROJECT_DIR)/libcurl-ios-dist/include",
+				);
+				INFOPLIST_FILE = AvatarCartoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libcurl-ios-dist/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyk.AvatarCartoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AvatarCartoon/AvatarCartoon-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7698435C1F5B1842005A5B79 /* Build configuration list for PBXProject "AvatarCartoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769843711F5B1842005A5B79 /* Debug */,
+				769843721F5B1842005A5B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		769843731F5B1842005A5B79 /* Build configuration list for PBXNativeTarget "AvatarCartoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769843741F5B1842005A5B79 /* Debug */,
+				769843751F5B1842005A5B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 769843591F5B1842005A5B79 /* Project object */;
+}
